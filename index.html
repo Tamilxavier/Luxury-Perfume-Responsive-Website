@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellavita Organic - Luxury Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c8786f6b63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background System -->
+    <div class="animated-background"></div>
+    <div class="background-container"></div>
+    <div class="background-texture"></div>
+
+    <!-- Wishlist Modal -->
+    <input type="checkbox" id="wishlistModal" class="modal-toggle">
+    <div class="modal-overlay">
+        <div class="modal">
+            <label for="wishlistModal" class="modal-close">&times;</label>
+            <i class="fas fa-heart modal-icon heart-icon"></i>
+            <h2 class="modal-title">ADDED TO WISHLIST!</h2>
+            <div class="modal-content">
+                ❤️ Your item has been saved to your wishlist. You can view all your favorite items anytime in your account.
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <input type="checkbox" id="cartModal" class="modal-toggle">
+    <div class="modal-overlay">
+        <div class="modal">
+            <label for="cartModal" class="modal-close">&times;</label>
+            <i class="fas fa-shopping-cart modal-icon cart-icon"></i>
+            <h2 class="modal-title">ADDED TO CART!</h2>
+            <div class="modal-content">
+                🛒 Your item has been added to your shopping cart. Continue shopping or proceed to checkout when ready.
+            </div>
+        </div>
+    </div>
+
+    <!-- Buy Now Modal -->
+    <input type="checkbox" id="buyModal" class="modal-toggle">
+    <div class="modal-overlay">
+        <div class="modal">
+            <label for="buyModal" class="modal-close">&times;</label>
+            <i class="fas fa-check-circle modal-icon success-icon"></i>
+            <h2 class="modal-title">ORDER PLACED!</h2>
+            <div class="modal-content">
+                🎉 Thank you for your purchase! Your order has been successfully placed and will be processed within 24 hours. You'll receive a confirmation email shortly.
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Success Modal -->
+    <input type="checkbox" id="newsletterModal" class="modal-toggle">
+    <div class="modal-overlay">
+        <div class="modal">
+            <label for="newsletterModal" class="modal-close">&times;</label>
+            <i class="fas fa-envelope modal-icon newsletter-icon"></i>
+            <h2 class="modal-title">WELCOME TO THE ELITE!</h2>
+            <div class="modal-content">
+                📧 You've successfully joined our exclusive newsletter! Get ready for luxury beauty tips, early access to new collections, and special member-only offers.
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Success Modal -->
+    <input type="checkbox" id="contactModal" class="modal-toggle">
+    <div class="modal-overlay">
+        <div class="modal">
+            <label for="contactModal" class="modal-close">&times;</label>
+            <i class="fas fa-paper-plane modal-icon contact-icon"></i>
+            <h2 class="modal-title">MESSAGE SENT!</h2>
+            <div class="modal-content">
+                💌 Thank you for reaching out! Your message has been received and our beauty experts will get back to you within 24 hours.
+            </div>
+        </div>
+    </div>
+
+    <!-- Hamburger Toggle -->
+<input type="checkbox" id="menu-toggle" hidden>
+<label for="menu-toggle" class="hamburger">☰</label>
+
+
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <div class="sidebar-logo">XAVIER'S</div>
+        <div class="sidebar-nav">
+            <a href="#home" class="sidebar-item">
+                <i class="fas fa-home sidebar-icon"></i>
+                <span class="sidebar-text">Home</span>
+            </a>
+            <a href="#featured" class="sidebar-item">
+                <i class="fas fa-star sidebar-icon"></i>
+                <span class="sidebar-text">Perfumes</span>
+            </a>
+           
+            <a href="#skincare" class="sidebar-item">
+                <i class="fas fa-leaf sidebar-icon"></i>
+                <span class="sidebar-text">Skincare</span>
+            </a>
+            <a href="#about" class="sidebar-item">
+                <i class="fas fa-info-circle sidebar-icon"></i>
+                <span class="sidebar-text">About</span>
+            </a>
+            <a href="#contact" class="sidebar-item">
+                <i class="fas fa-envelope sidebar-icon"></i>
+                <span class="sidebar-text">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Magazine Header -->
+        <section class="magazine-header" id="home">
+            <div class="header-top">
+                <div class="header-date">XAVIER'S | LUXURY - 2025</div>
+                <div class="header-actions">
+                    <input type="text" class="search-minimal" placeholder="Search luxury...">
+                    <div class="header-icons">
+                        <a href="#" class="header-icon"><i class="fas fa-user"></i></a>
+                        <label for="wishlistModal" class="header-icon"><i class="far fa-heart"></i></label>
+                        <label for="cartModal" class="header-icon"><i class="fas fa-shopping-bag"></i></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-left">
+                <h1 class="hero-title-main">REDEFINING<br>LUXURY<br>BEAUTY</h1>
+                <p class="hero-subtitle-main">Discover our curated collection of premium organic beauty products, meticulously crafted for those who demand excellence in every detail.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Premium Products</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5★</span>
+                        <span class="stat-label">Rated Experience</span>
+                    </div>
+                </div>
+
+                <a href="#featured" class="hero-cta-main">EXPLORE COLLECTION</a>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-image-container">
+                    <video autoplay muted loop playsinline class="product-video">
+                        <source src="./Assets/11.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ///////////////////////////////////////////// -->
+
+        <!-- Featured Products -->
+        <section class="content-section" id="featured" style="background: linear-gradient(135deg, #e8ddd4 0%, #d4c4b0 100%);">
+            <div class="section-header">
+                <h2 class="section-title-large">SIGNATURE COLLECTION</h2>
+                <p class="section-subtitle">Handpicked luxury essentials that define sophistication and elegance</p>
+            </div>
+            
+            <div class="products-grid">
+
+    <!-- First 3 cards -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="./Assets/1_bfb8703a-9f95-4910-9e04-a21b16a1bf75.webp" alt="CEO Woman Perfume">
+            <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+        </div>
+        <h3 class="product-name">CEO WOMAN</h3>
+        <p class="product-desc">An enchanting blend of floral and woody notes, crafted for the modern woman who leads with grace and confidence.</p>
+        <div class="product-price">₹449</div>
+        <div class="product-actions">
+            <label for="cartModal" class="product-btn">ADD TO CART</label>
+            <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="./Assets/1_d6b8844f-c519-4e09-9d55-84696a702ce3.webp" alt="CEO Man Perfume">
+            <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+        </div>
+        <h3 class="product-name">G.O.A.T MAN</h3>
+        <p class="product-desc">A sophisticated masculine fragrance with deep, rich undertones that command respect and admiration.</p>
+        <div class="product-price">₹449</div>
+        <div class="product-actions">
+            <label for="cartModal" class="product-btn">ADD TO CART</label>
+            <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="./Assets/OUDGold-01_e5a25ad1-ff0d-4c62-b038-193741f3f8d3.webp" alt="Honey Oud Perfume">
+            <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+        </div>
+        <h3 class="product-name">HONEY OUD</h3>
+        <p class="product-desc">An exotic fusion of premium oud and golden honey, creating an unforgettable olfactory experience.</p>
+        <div class="product-price">₹549</div>
+        <div class="product-actions">
+            <label for="cartModal" class="product-btn">ADD TO CART</label>
+            <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+        </div>
+    </div>
+
+    <!-- Next 3 cards  -->
+    <div class="product-card">
+        <div class="product-image">
+            <img src="./Assets/front_1.webp" alt="Caramel | Bergamot | Lemon Perfume">
+            <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+        </div>
+        <h3 class="product-name">Caramel | Bergamot | Lemon</h3>
+        <p class="product-desc">Luxury Perfume Gift Set For Men - 4 x 20ml.</p>
+        <div class="product-price">₹749</div>
+        <div class="product-actions">
+            <label for="cartModal" class="product-btn">ADD TO CART</label>
+            <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="./Assets/front_2.webp" alt="Almond | Artemisian Lemon | Bergamot | Honey Perfume">
+            <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+        </div>
+        <h3 class="product-name">Almond | Artemisian Lemon | Bergamot | Honey</h3>
+        <p class="product-desc">Luxury Unisex Perfume Gift Set - 4 x 20ml.</p>
+        <div class="product-price">₹649</div>
+        <div class="product-actions">
+            <label for="cartModal" class="product-btn">ADD TO CART</label>
+            <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="product-image">
+            <img src="./Assets/front_fe2d4d46-d28b-497f-a0ab-cce90b3dbb40 (1).webp" alt="Africanorange | Honey | Peach | Plum Perfume">
+            <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+        </div>
+        <h3 class="product-name">Africanorange | Honey | Peach | Plum</h3>
+        <p class="product-desc">Luxury Perfume Gift Set For Women - 4 x 20ml.</p>
+        <div class="product-price">₹799</div>
+        <div class="product-actions">
+            <label for="cartModal" class="product-btn">ADD TO CART</label>
+            <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+        </div>
+    </div>
+
+</div> <!-- ✅ CLOSE products-grid -->
+
+
+        </section>
+
+
+<!-- //////////////////////////////////////////////////////////////////////// -->
+
+        <!-- Skincare Section -->
+        <section class="content-section" id="skincare" style="background: linear-gradient(135deg, #f5f1eb 0%, #e8ddd4 100%);">
+            <div class="section-header">
+                <h2 class="section-title-large">ORGANIC SKINCARE</h2>
+                <p class="section-subtitle">Advanced skincare solutions powered by nature's finest ingredients</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Assets/1_c2967f95-da50-49b2-bd8c-76667fa89b40.webp" alt="Face Serum">
+                        <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+                    </div>
+                    <h3 class="product-name">Hydrating Sunscreen SPF 50 PA++++ - 50ml</h3>
+                    <p class="product-desc">24hr Hydration | Broad Spectrum Protection | No White Cast.</p>
+                    <div class="product-price">₹399</div>
+                    <div class="product-actions">
+                        <label for="cartModal" class="product-btn">ADD TO CART</label>
+                        <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Assets/download_cd190a7b-abf1-4ec9-9edc-84b97d9016c6.webp" alt="Face Mask">
+                        <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+                    </div>
+                    <h3 class="product-name">Party Perfect 2-in-1 Detan Body Wash - 200ml</h3>
+                    <p class="product-desc">Party-Ready Glow Instantly | 2-in-1 Instant Tan Removal | Skin-Loving Formula.</p>
+                    <div class="product-price">₹299</div>
+                    <div class="product-actions">
+                        <label for="cartModal" class="product-btn">ADD TO CART</label>
+                        <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Assets/download_7a1668a8-c206-45ac-aee4-ff394a54147b.webp"wishlist-heart"><i class="far fa-heart"></i></label>
+                    </div>
+                    <h3 class="product-name">Instant Brightening 2-in-1 Face Mask - Men | 45g</h3>
+                    <p class="product-desc">Brightens Skin | 2-in-1 Instant Tan Removal | No-Bleach Formula.</p>
+                    <div class="product-price">₹499</div>
+                    <div class="product-actions">
+                        <label for="cartModal" class="product-btn">ADD TO CART</label>
+                        <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Assets/1_9a44738a-c364-41d7-abf2-6fe5a45f546d.webp" alt="Face Cleanser">
+                        <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+                    </div>
+                    <h3 class="product-name">Eyelift Under Eye Cream - 20g</h3>
+                    <p class="product-desc">Under Eye Cream for Women and Men.</p>
+                    <div class="product-price">₹649</div>
+                    <div class="product-actions">
+                        <label for="cartModal" class="product-btn">ADD TO CART</label>
+                        <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Assets/image-1b_84ca6066-8296-4a0d-b89a-6db89cceb5cd.webp" alt="Moisturizer">
+                        <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+                    </div>
+                    <h3 class="product-name">Nicolips Lip Brightening Scrub - 20g</h3>
+                    <p class="product-desc">Lip Brightening, Nourishing & Repairing.</p>
+                    <div class="product-price">₹349</div>
+                    <div class="product-actions">
+                        <label for="cartModal" class="product-btn">ADD TO CART</label>
+                        <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./Assets/1_56cb17d4-e31a-4132-bea0-e94a054c84c3.webp" alt="Sunscreen">
+                        <label for="wishlistModal" class="wishlist-heart"><i class="far fa-heart"></i></label>
+                    </div>
+                    <h3 class="product-name">C-Glow Face Wash - 100ml</h3>
+                    <p class="product-desc">De-tan & Brightening.</p>
+                    <div class="product-price">₹199</div>
+                    <div class="product-actions">
+                        <label for="cartModal" class="product-btn">ADD TO CART</label>
+                        <label for="buyModal" class="product-btn buy-now">BUY NOW</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- /////////////////////////////////////////////////////////////////// -->
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-header">
+                <h2 class="section-title-large">ABOUT XAVIER'S</h2>
+                <p class="section-subtitle">Crafting luxury beauty experiences since 2025</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Redefining Luxury in Fragrance & Skincare Since 2025</h3>
+                    <p>
+                        At Xavier’s, we believe beauty is a journey of the senses—where fragrance captures emotion and skincare nurtures radiance. Established in 2025, Xavier’s Perfume & Skincare was created to bring timeless luxury, authenticity, and care into everyday rituals.
+                        Our perfumes are crafted with rare, handpicked ingredients that transform into unforgettable signature scents, while our skincare range blends nature’s finest botanicals with modern innovation to reveal healthy, glowing skin.
+                    </p>
+                    <p>
+                        With a strong commitment to sustainability, ethical sourcing, and cruelty-free practices, Xavier’s ensures that every product—whether fragrance or skincare—delivers not just results, but a luxury experience with purpose.
+                        At Xavier’s, we don’t just create products. We create moments of beauty, confidence, and elegance that last forever.
+                    </p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="about-stat-number">100%</div>
+                            <div class="about-stat-label">Organic</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="about-stat-number">50K+</div>
+                            <div class="about-stat-label">Happy Customers</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="about-stat-number">1</div>
+                            <div class="about-stat-label">Years Excellence</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-values">
+                    <h4>Our Values</h4>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                        <div class="value-text">
+                            <div class="value-title">Natural Ingredients</div>
+                            <div class="value-desc">Only the finest organic components</div>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fas fa-paw"></i></div>
+                        <div class="value-text">
+                            <div class="value-title">Cruelty-Free</div>
+                            <div class="value-desc">Never tested on animals</div>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fas fa-recycle"></i></div>
+                        <div class="value-text">
+                            <div class="value-title">Sustainable</div>
+                            <div class="value-desc">Eco-friendly packaging</div>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fas fa-gem"></i></div>
+                        <div class="value-text">
+                            <div class="value-title">Premium Quality</div>
+                            <div class="value-desc">Luxury you can trust</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- //////////////////////////////////////// -->
+
+        <!-- Contact Section -->
+   <section class="content-section" id="contact">
+  <div class="section-header">
+    <h2 class="section-title-large">CONTACT US</h2>
+    <p class="section-subtitle">
+      Get in touch with our beauty experts for personalized recommendations
+    </p>
+  </div>
+
+  <div class="contact-container">
+    <!-- Send a Message -->
+    <div class="contact-form">
+      <h3>Send us a Message</h3>
+      <input type="checkbox" id="contactFormToggle" class="form-toggle" />
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Phone Number" />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <label
+          for="contactFormToggle"
+          class="send-btn"
+        >Send Message</label>
+      </form>
+      <div class="form-success">
+        ✅ Thank you! Your message has been sent successfully. Our team will
+        get back to you within 24 hours.
+      </div>
+    </div>
+
+    <!-- Get in Touch -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <strong>Visit Our Store</strong>
+          <p>Near PHOENIX MALL, Velachery<br />Chennai, Tamil Nadu 600001</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <strong>Call Us</strong>
+          <p>+91 9150644720<br />Mon-Sat: 10AM-7PM</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email Us</strong>
+          <p>hello@xaviersluxury.com<br />support@xaviersluxury.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-comments"></i>
+        <div>
+          <strong>Follow Us</strong>
+          <p>@xaviers_organic<br />Instagram • Facebook • Twitter</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">JOIN THE ELITE</h2>
+                <p class="newsletter-desc">Be the first to discover exclusive collections, limited editions, and receive personalized beauty recommendations from our experts.</p>
+                <input type="checkbox" id="newsletterFormToggle" class="form-toggle">
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email for exclusive access" required>
+                    <label for="newsletterFormToggle" class="newsletter-btn">JOIN NOW</label>
+                </form>
+                <div class="form-success" style="background: linear-gradient(135deg, #4caf50, #66bb6a); color: white; padding: 30px; border-radius: 25px; margin-top: 30px; text-align: center; font-weight: 700; font-size: 18px;">
+                    🎉 Welcome to the Elite! You've successfully joined our exclusive newsletter. Check your email for a special welcome offer!
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
